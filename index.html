@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio</title>
+  <!-- Carregando o CSS -->
+  <link href="css/estilo.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <nav class="topnav">
+    <a class="ativo" href="#">Home</a>
+
+    <div class="topnav-right">
+      <a class="cadastro" href="#">Cadastre-se</a>
+      <a href="#entrar">Entrar</a>
+      <a href="Contato">Contato</a>
+      <a class="sobre" href="#sobre">Sobre</a>
+    </div>
+  </nav>
+
+  
+    <table class="logo">
+      <tr>
+        <td class="neidoca">
+          <h1>NEIDOCA</h1>
+        </td>
+        <td>
+          <img src="img/tosa.gif" title="Banho e Tosa" alt="Tosa" width="120" height="80" >
+        </td>
+        <td class="groomer">
+          <h1>GROOMER</h1>
+        </td>
+      </tr>
+    </table>
+  
+
+  <center>
+    <h2>Banho & Tosa</h2>
+  </center>
+
+  <body background="/img/fundo.webp" bgproperties="fixed"></body>
+
+  <div class="container">
+
+    <div class="coluna" border="1">
+
+      <center>
+        <h1 class="titulo">Cadastro</h1>
+      </center>
+
+      <br>
+
+      <button class="proprietario"><img src="/img/homem.png" width="102" height="60"><h3>Proprietário</h3></button>
+
+      <button class="proprietario"><img src="/img/dog.png" width="102" height="60"><h3>Animal</h3></button>
+
+      <button class="proprietario"><img src="/img/servico.png" width="102" height="60"><h3>Serviço</h3></button>
+
+      <button class="proprietario"><img src="/img/agenda.png" width="102" height="60"><h3>Agenda</h3></button>
+
+      <button class="proprietario"><img src="/img/pagamento.png" width="102" height="60"><h3>Pagamento</h3></button>
+
+      <br><br>
+
+      <border="5">
+
+        <label>Proprietário:</label><br>
+        <input type="text" id="Proprietário" name="Proprietário" size="95" placeholder="Nome" title="Informe o seu nome"
+          required />
+        <br>
+        <br>
+
+        <label>CPF:</label><br>
+        <input type="text" id="CPF" name="CPF" size="10" placeholder="CPF" title="Informe o seu CPF" required
+          pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}[-][0-9]{2}" maxlength="14" />
+        <br>
+        <br>
+
+        <label>Data de Nascimento:</label><br>
+        <input type="date" id="Nascimento" name="Nascimento" size="81" placeholder="Data"
+          title="Informe a sua data de nascimento" required />
+        <br>
+        <br>
+
+        <label>Telefone:</label><br>
+        <input type="text" id="telefone" name="Número do Telefone" size="10" placeholder="Telefone"
+          title="Informe seu contato" required pattern="[(][0-9]{2}[)][0-9]{4,5}[-][0-9]{4}" maxlength="14" />
+        <br>
+        <br>
+
+        <label>E-mail:</label><br>
+        <input type="text" id="E-mail" name="E-mail" size="40" placeholder="Seu e-mail" title="Informe o seu e-mail"
+          required />
+        <br>
+        <br>
+
+        <label>Quantos animais possui:</label><br>
+        <input type="number" id="Quantidade de Animais" name="Quantidade" size="5" placeholder="Quantidade de Animal"
+          title="Informe a quantidade" required />
+        <br>
+        <br>
+
+       <td>Delivery do Animal:</td><br>
+        <input type="radio" name="sim/não" value="S" class="delivery">Sim
+        <input type="radio" name="sim/não" value="N" class="delivery">Não<br><br>
+      
+      
+
+          <label>Observações:</label><br>
+          <textarea id="dados" name="dados" rows="5" cols="95" maxlength="500"
+            placeholder="Informações Adcionais"></textarea>
+          
+            <br>
+
+          <label>Senha:</label><br>
+          <input type="password" id="senha" name="senha" size="10" placeholder="Crie uma senha"
+            title="Informe uma senha com 6 digitos" required pattern="[0-9][A-Z]{6}" maxlength="6" />
+          <br>
+          <br>
+
+          <input type="checkbox" required>
+          <tr>Estou de acordo com as informações acima.</tr><br>
+          <input type="checkbox" required>
+          <tr>Li e aceito os Termos de Uso, Conteúdo e Privacidade.</tr><br>
+          <input type="checkbox">
+          <tr>Desejo receber novidades e lançamentos de novos serviços e produtos.</tr><br><br>
+
+          
+              <input type="reset" value="Limpar" class="botao"  />
+              <input type="submit" value="Salvar" class="botao" />
+
+
+    </div><br>
+
+
+    <div class="coluna">
+      <center>
+        <h1 class="titulo">Agendamento</h1>
+      </center><br>
+
+
+      <table class="servico" border="1" cellspacing="20" cellpadding="16"  bordercolor="blue">
+        <tr class="servico" align="center">
+          <td class="horas" width="20">Hs</td>
+          <td>Serviço</td>
+          <td>Pet</td>
+          <td>Raça</td>
+          <td>Colaborador</td>
+        </tr>
+
+        <tr class="linha">
+          <td>09:00</td>
+          <td class="servico" align="center">🚿✂ </td>
+          <td class="servico" align="center">🐶</td>
+          <td align="center">Buldogue</td>
+          <td align="center">Sérgio</td>
+        </tr>
+
+        <tr>
+          <td>10:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>11:00</td>
+          <td class="servico" align="center">🚿 💤 </td>
+          <td class="servico" align="center">🐶</td>
+          <td align="center">Chihuahua</td>
+          <td align="center">Marineide</td>
+        </tr>
+
+        <tr>
+          <td>12:00</td>
+          <td class="servico" align="center">🚿 ✂ 💤 </td>
+          <td class="servico" align="center">🐶</td>
+          <td align="center">Galgo Afegão</td>
+          <td align="center">Marineide</td>
+        </tr>
+
+        <tr>
+          <td>13:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>14:00</td>
+          <td class="servico" align="center">🚿 ✂ </td>
+          <td class="servico" align="center">🐶</td>
+          <td align="center">Bicho Frisé</td>
+          <td align="center">Marineide</td>
+        </tr>
+
+        <tr>
+          <td>15:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>16:00</td>
+          <td class="servico" align="center">🚿 ✂ 💤</td>
+          <td class="servico" align="center">🐶</td>
+          <td align="center">Bull Terrier</td>
+          <td align="center">Sérgio</td>
+        </tr>
+
+        <tr>
+          <td>17:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+
+      <input type="submit" value="Editar" class="botao" />
+      <input type="submit" value="Agendar" class="botao" />
+
+      <br>
+      <br>
+
+      
+
+    </div>
+  </div>
+  <center>
+  <img class="corre" src="img/cheiro.gif" title="Obrigado pela visita" alt="Obrigado" width="1000" height="250">
+  </center>
+
+  <footer>
+    <!--Rodapé-->
+    <p>Neidoca Groomer - Todos os direitos reservador &copy;</p>
+  </footer>
+
+
+
+</body>
+
+</html>
